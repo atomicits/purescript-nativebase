@@ -1,0 +1,40 @@
+'use strict';
+
+var NB = require("native-base");
+
+exports.containerClass = NB.Container
+exports.headerClass = NB.Header
+exports.contentClass = NB.Content
+exports.footertabClass = NB.FooterTab
+exports.footerClass = NB.Footer
+exports.titleClass = NB.Title
+exports.buttonClass = NB.Button
+exports.viewClass = NB.View
+exports.textClass = NB.Text
+exports.switchClass = NB.Switch
+exports.pickerClass = NB.Picker
+exports.pickerItemClass = NB.Picker.Item
+exports.listClass = NB.List
+exports.listitemClass = NB.ListItem
+exports.h1Class = NB.H1
+exports.h2Class = NB.H2
+exports.h3Class = NB.H3
+exports.rowClass = NB.Row
+exports.colClass = NB.Col
+exports.gridClass = NB.Grid
+exports.inputgroupClass = NB.InputGroup
+exports.inputClass = NB.Input
+exports.textareaClass = NB.Textarea
+exports.iconClass = NB.Icon
+exports.thumbnailClass = NB.Thumbnail
+exports.cardClass = NB.Card
+exports.carditemClass = NB.CardItem
+exports.cardswiperClass = NB.CardSwiper
+exports.deckswiperClass = NB.DeckSwiper
+exports.badgeClass = NB.Badge
+exports.spinnerClass = NB.Spinner
+exports.checkboxClass = NB.CheckBox
+exports.radioClass = NB.Radio
+exports.progressbarClass = NB.ProgressBar
+exports.drawerClass = NB.Drawer
+exports.tabsClass = NB.Tabs

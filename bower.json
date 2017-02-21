@@ -1,0 +1,45 @@
+{
+    "name": "purescript-nativebase",
+    "description": "PureScript wrapper for nativebase",
+    "keywords": [
+        "purescript",
+        "nativebase",
+        "react"
+    ],
+    "version": "0.0.1",
+    "moduleType": [
+        "node"
+    ],
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "output"
+    ],
+    "dependencies": {
+        "purescript-aff": "^2.0.1",
+        "purescript-eff": "^2.0.0",
+        "purescript-functions": "^2.0.0",
+        "purescript-lists": "^3.1.0",
+        "purescript-signal": "^8.0.0",
+        "purescript-profunctor": "^2.0.0",
+        "purescript-maps": "^2.0.0",
+        "purescript-globals": "^2.0.0",
+        "purescript-profunctor-lenses": "^2.0.0",
+        "purescript-react": "^2.0.0",
+        "purescript-coroutines": "^3.0.0",
+        "purescript-eff-functions": "^2.0.0",
+        "purescript-css": "^2.1.0",
+        "purescript-datetime": "^2.1.0"
+    },
+    "authors": [
+        "Sudhir Kumar <s@atomicits.com>",
+        "Vishnu Prasad <vishnu@atomicits.com>",
+        "Sathish Kumar <sathish@atomicits.com>"
+    ],
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/atomicits/purescript-nativebase.git"
+    }
+}
