@@ -43,6 +43,12 @@ exports.tabsClass = NB.Tabs;
 
 
 exports.touchableHighlightClass = ReactNative.TouchableHighlight;
-exports.touchableOpacityClass         = ReactNative.TouchableOpacity;
+exports.touchableOpacityClass  = ReactNative.TouchableOpacity;
 exports.touchableWithoutFeedbackClass = ReactNative.TouchableWithoutFeedback;
 exports.textClasses = ReactNative.Text;
+exports.textInputClass = ReactNative.TextInput;
+exports.pickerClasses  = ReactNative.Picker;
+exports.pickerItemClasses = ReactNative.Picker.Item;
+exports.activityIndicatorClass = ReactNative.ActivityIndicator;
+exports.switchClasses  = ReactNative.Switch;
+exports.imageClass = ReactNative.Image;

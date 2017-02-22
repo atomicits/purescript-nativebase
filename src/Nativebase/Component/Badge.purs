@@ -1,6 +1,5 @@
 module Badge where
 
-
 import React (ReactElement, createElement)
 import RNX.PropTypes (Prop)
 import Nativebase.ComponentClass (badgeClass)

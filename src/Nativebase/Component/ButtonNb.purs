@@ -5,7 +5,6 @@ import Nativebase.ComponentClass (buttonClass)
 import React (ReactElement, createElement)
 import Touchable (TouchableOpacityPropsEx)
 
-
 type ButtonNbProps eff = ButtonNbPropsEx eff
 
 type ButtonNbPropsEx eff = TouchableOpacityPropsEx eff

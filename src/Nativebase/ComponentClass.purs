@@ -50,3 +50,15 @@ foreign import touchableHighlightClass :: forall props. ReactClass props
 foreign import touchableWithoutFeedbackClass :: forall props. ReactClass props
 
 foreign import textClasses :: forall props. ReactClass props
+
+foreign import textInputClass :: forall props. ReactClass props
+
+foreign import pickerClasses  :: forall props. ReactClass props
+
+foreign import pickerItemClasses :: forall props. ReactClass props
+
+foreign import activityIndicatorClass :: forall props. ReactClass props
+
+foreign import switchClasses :: forall props. ReactClass props
+
+foreign import imageClass :: forall props. ReactClass props

@@ -5,7 +5,7 @@ import Nativebase.ComponentClass (viewClass)
 import RNX.PropTypes (class AutoEnum, class NoneEnum, Prop, RefType)
 import RNX.Styles (Style)
 import React (ReactElement, createElement)
-import Unsafe.Coerce (unsafeCoerce)
+import Unsafe.Coerce
 
 
 type ViewNbProps eff ref = ViewNbPropsEx eff ref ()

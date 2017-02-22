@@ -28,12 +28,16 @@ type TouchablePropsEx eff r =
 
 type TouchableWithoutFeedbackProps eff = TouchablePropsEx eff ()
 
-type TouchableHighlightProps eff = TouchablePropsEx eff
+
+type TouchableHighlightProps eff = TouchableHighlightPropsEx eff ()
+
+type TouchableHighlightPropsEx eff r = TouchablePropsEx eff
   ( activeOpacity :: Number
   , onHideUnderlay :: EventHandler eff TouchEvent
   , onshowUnderlay :: EventHandler eff TouchEvent
   , style :: Style
   , underlayColor :: Color
+  |r
   )
 
 type TouchableOpacityProps eff = TouchableOpacityPropsEx eff ()
@@ -53,5 +57,5 @@ touchableWithoutFeedback :: forall eff. Prop (TouchableWithoutFeedbackProps eff)
 touchableWithoutFeedback  = createElementOneChild touchableWithoutFeedbackClass
 
 
-touchableHighlight :: forall  eff. Prop (TouchableHighlightProps  eff) ->  ReactElement -> ReactElement
+touchableHighlight :: forall  eff. Prop (TouchableHighlightProps eff) ->  ReactElement -> ReactElement
 touchableHighlight = createElementOneChild touchableHighlightClass
