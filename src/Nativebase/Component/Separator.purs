@@ -1,13 +1,11 @@
 module Separator where
 
+import RNX.Styles (Style)
 import ViewNb (ViewNbPropsEx)
 
 
-type SeparatorProps eff ref = ViewNbPropsEx eff ref (styleNb :: String) -- React.PropTypes.object,
+type SeparatorProps eff ref = ViewNbPropsEx eff ref (styleNb :: Style)
 
-
--- separator :: forall  eff ref. Prop (SeparatorProps eff ref) -> Array (ReactElement) -> ReactElement
--- separator = createElement separatorClass
 
 
 --- need Separator class

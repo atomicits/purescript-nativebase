@@ -15,6 +15,7 @@ type ViewNbPropsEx eff ref r =
   , ref :: RefType ref
   , style :: Style
   , testID :: String
+  , padder :: Boolean
   , accessibilityLabel :: String
   , accessible :: Boolean
   , hitSlop :: {top:: Number, left:: Number, bottom:: Number, right:: Number}
@@ -33,7 +34,7 @@ type ViewNbPropsEx eff ref r =
   , onStartShouldSetResponderCapture :: TouchEvent -> Boolean
   , pointerEvents :: PointerEvents
   , removeClippedSubviews :: Boolean
-  ,  accessibilityComponentType :: AccessibilityType
+  , accessibilityComponentType :: AccessibilityType
   , accessibilityLiveRegion :: AccessibilityLiveRegion
   , collapsable :: Boolean
   , importantForAccessibility :: ImportanceForAccessibility
@@ -156,5 +157,5 @@ boxOnly :: PointerEvents
 boxOnly = PointerEvents "box-only"
 
 
-viewNb :: forall eff ref. Prop (ViewNbProps eff ref) -> Array (ReactElement) -> ReactElement
-viewNb = createElement viewClass
+viewNB :: forall eff ref. Prop (ViewNbProps eff ref) -> Array (ReactElement) -> ReactElement
+viewNB = createElement viewClass

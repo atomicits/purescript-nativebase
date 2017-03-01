@@ -1,13 +1,15 @@
 module Fab where
 
+import RNX.PropTypes (UnKnownType)
+import RNX.Styles (Style)
 
 type FabProps eff  =
-  { styleNb        :: String   -- React.PropTypes.object
+  { styleNb        :: Style
   , active         :: Boolean
   , direction      :: String
-  , containerStyle :: String -- React.PropTypes.object
+  , containerStyle :: Style
   , position       :: String
-  , animated       :: String  -- Need to implement Animated Api in reactNative
+  , animated       :: UnKnownType  -- Need to implement Animated Api in reactNative
   }
 
 

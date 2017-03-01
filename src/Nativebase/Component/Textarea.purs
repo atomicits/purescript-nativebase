@@ -1,13 +1,16 @@
 module Textarea where
 
 import React (ReactElement)
-import RNX.PropTypes (Prop)
+
 import Nativebase.ComponentClass (textareaClass)
-import TextInput (TextInputPropsEx)
 import RNX.Components (createElementOneChild)
+import RNX.PropTypes (Prop)
+import RNX.Styles (Style)
+import TextInput (TextInputPropsEx)
+
 
 type TextAreaProps eff ref =  TextInputPropsEx eff ref
-  ( styleNb :: String -- React.PropTypes.object,
+  ( styleNb :: Style
   , rowSpan :: Number
   , bordered :: Boolean
   , underline :: Boolean

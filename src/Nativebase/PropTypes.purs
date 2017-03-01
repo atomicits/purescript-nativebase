@@ -2,8 +2,14 @@ module RNX.PropTypes where
 
 
 import React.DOM.Props (Props, unsafeMkProps)
+import Unsafe.Coerce (unsafeCoerce)
 
 type Prop a = a -> a
+
+foreign import data Theme :: *
+
+theme :: forall a. a -> Theme
+theme = unsafeCoerce
 
 foreign import data RefType :: * -> *
 

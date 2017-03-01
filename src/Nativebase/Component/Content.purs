@@ -1,18 +1,33 @@
 module Content where
 
-import Nativebase.ComponentClass (contentClass)
-import RNX.PropTypes (Prop)
 import React (ReactElement, createElement)
 
+import Nativebase.ComponentClass (contentClass)
+import RNX.PropTypes (Prop, Theme)
+import RNX.Styles (Style)
+import ScrollView
 
-type ContentProps eff  =
-  { keyboardAwareScrollView :: String  -- we need this library  'react-native-keyboard-aware-scroll-view';
-  , styleNb :: String    ---  React.PropTypes.object,
-  , padder :: Boolean
-  , disableKBDismissScroll :: Boolean
-  , enableResetScrollToCoords :: Boolean
+
+type Shape =
+  { x :: Number
+  , y :: Number
   }
 
+type KeyboardAwareScrollViewProps eff ref = KeyboardAwareScrollViewPropsEx eff ref ()
 
-content :: forall eff . Prop (ContentProps eff) -> Array (ReactElement) -> ReactElement
+type KeyboardAwareScrollViewPropsEx eff ref r = ScrollViewPropsEx eff ref
+   ( viewIsInsideTabBar  :: Boolean
+   , resetScrollToCoords :: Shape
+   |r
+   )
+
+type ContentProps eff ref = KeyboardAwareScrollViewPropsEx eff ref
+  ( styleNb :: Style
+  , disableKBDismissScroll :: Boolean
+  , enableResetScrollToCoords :: Boolean
+  , theme :: Theme
+  )
+
+
+content :: forall eff ref. Prop (ContentProps eff ref) -> Array (ReactElement) -> ReactElement
 content = createElement contentClass

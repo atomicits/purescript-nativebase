@@ -1,9 +1,11 @@
 module PickerIos where
 
-import ViewNb
+import React (ReactElement, createElement)
+
 import Nativebase.ComponentClass (pickerClass)
 import RNX.PropTypes (Prop)
-import React (ReactElement, createElement)
+import ViewNb
+
 
 type PickerIosProps eff ref = ViewNbPropsEx eff ref ()
 

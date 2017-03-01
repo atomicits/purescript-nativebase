@@ -1,10 +1,11 @@
 module SwitchNB where
 
 import React (ReactElement)
-import RNX.PropTypes (Prop)
-import Switch (SwitchPropsEx)
+
 import Nativebase.ComponentClass (switchClass)
 import RNX.Components (createElementOneChild)
+import RNX.PropTypes (Prop)
+import Switch (SwitchPropsEx)
 
 
 type SwitchNBProps eff = SwitchPropsEx eff ()

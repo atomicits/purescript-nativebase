@@ -1,13 +1,10 @@
 module Right where
 
+import RNX.Styles (Style)
 import ViewNb (ViewNbPropsEx)
 
 
-type RightProps eff ref = ViewNbPropsEx eff ref (styleNb :: String) -- React.PropTypes.object,
-
-
--- right :: forall  eff ref. Prop (RightProps eff ref) -> Array (ReactElement) -> ReactElement
--- right = createElement badgeClass
+type RightProps eff ref = ViewNbPropsEx eff ref (styleNb :: Style)
 
 
 ---- need rightclass

@@ -52,3 +52,6 @@ exports.pickerItemClasses = ReactNative.Picker.Item;
 exports.activityIndicatorClass = ReactNative.ActivityIndicator;
 exports.switchClasses  = ReactNative.Switch;
 exports.imageClass = ReactNative.Image;
+exports.refreshControlClass = ReactNative.RefreshControl;
+exports.scrollViewClass = ReactNative.ScrollView;
+exports.listViewClass = ReactNative.ListView;

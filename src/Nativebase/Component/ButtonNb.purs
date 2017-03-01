@@ -1,9 +1,13 @@
 module ButtonNb where
 
-import RNX.PropTypes (Prop)
-import Nativebase.ComponentClass (buttonClass)
 import React (ReactElement, createElement)
+
+import Nativebase.ComponentClass (buttonClass)
+import RNX.Color (Color)
+import RNX.PropTypes (Prop)
+import RNX.Styles (Style)
 import Touchable (TouchableOpacityPropsEx)
+
 
 type ButtonNbProps eff = ButtonNbPropsEx eff
 
@@ -17,13 +21,18 @@ type ButtonNbPropsEx eff = TouchableOpacityPropsEx eff
   , info :: Boolean
   , bordered :: Boolean
   , capitalize :: Boolean
+  , color :: Color
+  , textStyle :: Style
   , disabledNb :: Boolean
   , rounded :: Boolean
   , large :: Boolean
   , small :: Boolean
   , active :: Boolean
+  , iconLeft :: Boolean
+  , iconRight :: Boolean
+  , inputButton :: Boolean
   , badgeColor :: String
-  , badgeValueStyle :: String  --React.PropTypes.object
+  , badgeValueStyle :: Style
   )
 
 

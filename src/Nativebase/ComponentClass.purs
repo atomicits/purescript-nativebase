@@ -2,6 +2,8 @@ module Nativebase.ComponentClass where
 
 import React (ReactClass)
 
+-- theme
+foreign import data Theme :: *
 
 foreign import containerClass :: forall props. ReactClass props
 foreign import headerClass :: forall props. ReactClass props
@@ -62,3 +64,10 @@ foreign import activityIndicatorClass :: forall props. ReactClass props
 foreign import switchClasses :: forall props. ReactClass props
 
 foreign import imageClass :: forall props. ReactClass props
+
+
+foreign import refreshControlClass           :: forall props. ReactClass props
+
+foreign import scrollViewClass :: forall props. ReactClass props
+
+foreign import listViewClass :: forall props. ReactClass props

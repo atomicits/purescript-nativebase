@@ -1,12 +1,15 @@
 module Tab where
 
+import React (ReactElement, createElement)
+
 import Nativebase.ComponentClass (tabsClass)
 import RNX.PropTypes (Prop)
-import React (ReactElement, createElement)
+import RNX.Styles (Style)
+
 import ViewNb (ViewNbPropsEx)
 
 
-type TabProps eff ref = ViewNbPropsEx eff ref (styleNb :: String) -- React.PropTypes.object,
+type TabProps eff ref = ViewNbPropsEx eff ref (styleNb :: Style)
 
 
 tab :: forall  eff ref. Prop (TabProps eff ref) -> Array (ReactElement) -> ReactElement

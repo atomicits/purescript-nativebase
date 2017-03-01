@@ -1,9 +1,10 @@
 module Spinner where
 
 import React (ReactElement, createElement)
-import RNX.PropTypes (Prop)
-import Nativebase.ComponentClass (spinnerClass)
+
 import ActivityIndicator (ActivityIndicatorPropsEx)
+import Nativebase.ComponentClass (spinnerClass)
+import RNX.PropTypes (Prop)
 
 
 type SpinnerProps eff ref = ActivityIndicatorPropsEx eff ref
