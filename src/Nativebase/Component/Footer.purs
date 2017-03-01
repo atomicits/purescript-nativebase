@@ -1,12 +1,14 @@
 module Footer where
 
+import React (ReactElement, createElement)
+
 import Nativebase.ComponentClass (footerClass)
 import RNX.PropTypes (Prop)
-import React (ReactElement, createElement)
+import RNX.Styles
 import ViewNb (ViewNbPropsEx)
 
 
-type FooterProps eff ref = ViewNbPropsEx eff ref (styleNb :: String) -- React.PropTypes.object,
+type FooterProps eff ref = ViewNbPropsEx eff ref (styleNb :: Style)
 
 
 footer :: forall  eff ref. Prop (FooterProps eff ref) -> Array (ReactElement) -> ReactElement

@@ -1,8 +1,9 @@
 module Radio where
 
 import React (ReactElement, createElement)
-import RNX.PropTypes (Prop)
+
 import Nativebase.ComponentClass (radioClass)
+import RNX.PropTypes (Prop)
 import Touchable (TouchableOpacityPropsEx)
 
 type RadioProps eff = TouchableOpacityPropsEx eff (selected :: Boolean)

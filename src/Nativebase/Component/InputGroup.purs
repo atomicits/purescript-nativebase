@@ -1,18 +1,23 @@
 module InputGroup where
 
-import Nativebase.ComponentClass
-import RNX.PropTypes (Prop)
 import React (ReactElement, createElement)
+
+import Nativebase.ComponentClass (inputGroupClass)
+import RNX.PropTypes (Prop)
+import RNX.Styles (Style)
 import ViewNb (ViewNbPropsEx)
 
+
 type InputGroupProps eff ref = ViewNbPropsEx eff ref
-  ( styleNb :: String  -- React.PropTypes.object,
+  ( styleNb :: Style
   , regular :: Boolean
   , underline :: Boolean
   , rounded :: Boolean
   , success :: Boolean
   , error :: Boolean
   , disabled :: Boolean
+  , atoolbar :: Boolean
+  , iconRight :: Boolean
   )
 
 

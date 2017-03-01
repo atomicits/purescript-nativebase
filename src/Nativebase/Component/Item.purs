@@ -13,6 +13,14 @@ type ItemPropsEx eff = TouchableOpacityPropsEx eff
   , fixedLabel :: Boolean
   , success :: Boolean
   , error :: Boolean
+  , placeholderLabel :: Boolean
+  , bordered :: Boolean
+  , underline :: Boolean
+  , rounded :: Boolean
+  , disabled :: Boolean
+  , placeholder :: String
+  , secureTextEntry :: Boolean
+  , last :: Boolean
   )
 
 

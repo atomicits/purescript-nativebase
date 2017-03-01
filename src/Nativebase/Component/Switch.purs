@@ -1,11 +1,13 @@
 module Switch where
 
-import RNX.Components (createElementOneChild)
+import React (ReactElement)
+
 import Events (EventHandler)
 import Nativebase.ComponentClass (switchClasses)
 import RNX.Color (Color)
+import RNX.Components (createElementOneChild)
 import RNX.PropTypes (Prop)
-import React (ReactElement)
+
 
 type SwitchProps eff =  SwitchPropsEx eff ()
 

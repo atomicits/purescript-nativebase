@@ -1,10 +1,12 @@
 module Text where
 
-import RNX.Styles (Style)
-import Events (EventHandler, LayoutEvent, TouchEvent)
-import RNX.PropTypes (Prop)
 import React (ReactElement, createElement)
+
+import Events (EventHandler, LayoutEvent, TouchEvent)
 import Nativebase.ComponentClass (textClasses)
+import RNX.PropTypes (Prop)
+import RNX.Styles (Style)
+
 
 type TextProps eff = TextPropsEx eff ()
 

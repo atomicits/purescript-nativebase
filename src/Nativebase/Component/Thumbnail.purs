@@ -1,13 +1,16 @@
 module Thumbnail where
 
 import React (ReactElement)
-import RNX.PropTypes (Prop)
-import Nativebase.ComponentClass (thumbnailClass)
+
 import Image (ImagePropsEx)
+import Nativebase.ComponentClass (thumbnailClass)
 import RNX.Components (createElementOneChild)
+import RNX.PropTypes (Prop)
+import RNX.Styles (Style)
+
 
 type ThumbnilProps eff = ImagePropsEx eff
-  ( styleNb :: String
+  ( styleNb :: Style
   , square :: Boolean
   , circular :: Boolean
   , size :: Number

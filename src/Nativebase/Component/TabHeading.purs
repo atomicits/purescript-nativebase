@@ -1,12 +1,15 @@
 module TabHeading where
 
+import React (ReactElement, createElement)
+
 import Nativebase.ComponentClass
 import RNX.PropTypes (Prop)
-import React (ReactElement, createElement)
+import RNX.Styles (Style)
+
 import ViewNb (ViewNbPropsEx)
 
 
-type TabHeadingProps eff ref = ViewNbPropsEx eff ref (styleNb :: String) -- React.PropTypes.object,
+type TabHeadingProps eff ref = ViewNbPropsEx eff ref (styleNb :: Style)
 
 
 tabHeading :: forall  eff ref. Prop (TabHeadingProps eff ref) -> Array (ReactElement) -> ReactElement

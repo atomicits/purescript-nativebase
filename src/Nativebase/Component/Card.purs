@@ -1,18 +1,22 @@
 module Card where
 
-import Nativebase.ComponentClass
-import RNX.PropTypes (Prop)
 import React (ReactElement, createElement)
+
+import Nativebase.ComponentClass (cardClass)
+import RNX.PropTypes (Prop)
+import RNX.Styles
 import ViewNb (ViewNbPropsEx)
-import Prelude
 
+type RenderRow = forall a. a -> StringOrNumber -> StringOrNumber -> ReactElement
 
-type CardProps eff ref = ViewNbPropsEx eff ref
-  ( styleNb   :: String   -- React.PropTypes.object,
-  , dataArray :: String -- React.PropTypes.object,
-  , renderRow :: String  -- React.PropTypes.object,
+data StringOrNumber = String | Number
+
+type CardProps eff ref a = ViewNbPropsEx eff ref
+  ( styleNb   :: Style
+  , dataArray :: Array a
+  , renderRow :: RenderRow
   )
 
 
-card :: forall  eff ref. Prop (CardProps eff ref) -> Array (ReactElement) -> ReactElement
+card :: forall  eff ref a. Prop (CardProps eff ref a) -> Array (ReactElement) -> ReactElement
 card = createElement cardClass

@@ -1,17 +1,21 @@
 module TextNb where
 
-import Text (TextPropsEx)
 import React (ReactElement, createElement)
+
 import Nativebase.ComponentClass (textClass)
 import RNX.PropTypes (Prop)
+import RNX.Styles (Style)
+import Text (TextPropsEx)
 
 
 type TextNbProps eff = TextNbPropsEx eff ()
 
 type TextNbPropsEx eff r = TextPropsEx eff
- ( styleNb :: String   --- React.PropTypes.object,
+ ( styleNb :: Style
+ , note :: Boolean
  |r
  )
+
 
 textNb :: forall eff. Prop (TextNbProps eff) -> Array (ReactElement) -> ReactElement
 textNb = createElement textClass

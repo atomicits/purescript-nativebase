@@ -1,9 +1,10 @@
 module PickerAndroid where
 
-import Picker (PickerPropsEx)
 import React (ReactElement, createElement)
-import RNX.PropTypes (Prop)
+
 import Nativebase.ComponentClass (pickerClass)
+import Picker (PickerPropsEx)
+import RNX.PropTypes (Prop)
 
 
 type PickerAndroidProps a eff ref = PickerPropsEx a eff ref ()

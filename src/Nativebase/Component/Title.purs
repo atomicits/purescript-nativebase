@@ -1,12 +1,14 @@
 module Title where
 
 import React (ReactElement, createElement)
-import Text (TextPropsEx)
-import RNX.PropTypes (Prop)
+
 import Nativebase.ComponentClass (titleClass)
+import RNX.PropTypes (Prop)
+import RNX.Styles (Style)
+import Text (TextPropsEx)
 
 
-type TitleProps eff = TextPropsEx eff  (styleNb :: String)  --React.PropTypes.object
+type TitleProps eff = TextPropsEx eff  (styleNb :: Style)
 
 
 title :: forall eff. Prop (TitleProps eff) -> Array (ReactElement) -> ReactElement
