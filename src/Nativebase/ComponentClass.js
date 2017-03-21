@@ -1,7 +1,7 @@
 'use strict';
 
 var NB = require("native-base");
-
+var ReactNative = require("react-native");
 
 exports.containerClass = NB.Container;
 exports.headerClass = NB.Header;

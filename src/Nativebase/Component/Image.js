@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
-exports.unsafeStyleProp = function(s) {
-    return function(v) {
+exports.unsafeStyleProp = function (s) {
+    return function (v) {
         var o = {};
         o[s] = v;
         return o;
-    }
-}
+    };
+};

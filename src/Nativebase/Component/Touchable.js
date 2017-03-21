@@ -1,7 +1,7 @@
 'use strict';
 
 var React = require('react');
-var ReactNative = require('react-native');
+//var ReactNative = require('react-native');
 
 exports.createElementOneChild = function (class_) {
     return function(props) {
