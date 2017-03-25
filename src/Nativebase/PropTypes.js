@@ -1,3 +1,3 @@
-'use Strict'
+"use strict";
 
 exports.require = require;

@@ -1,8 +1,21 @@
 {
-  "dependencies": {
-      "native-base": "^2.0.8",
-      "react": "^15.4.2",
-      "react-addons-css-transition-group": "^15.4.2",
-      "react-dom": "^15.4.2"
-  }
+    "scripts": {
+        "clean": "rimraf output && rimraf .pulp-cache",
+        "build": "jshint src && psa \"src/**/*.purs\" \"bower_components/purescript-*/**/*.purs\" --censor-lib --strict",
+        "build-all": "jshint src && jscs src && psa \"src/**/*.purs\" \"bower_components/purescript-*/**/*.purs\" --censor-lib --strict",
+
+        "test": "psc \"src/**/*.purs\" \"bower_components/purescript-*/**/*.purs\" \"test/**/*.purs\" && psc-bundle \"output/**/*.js\" --module Test.Main --main Test.Main | node"
+    },
+    "dependencies": {
+        "native-base": "^2.0.8",
+        "react": "^15.4.2",
+        "react-addons-css-transition-group": "^15.4.2",
+        "react-dom": "^15.4.2"
+    },
+    "devDependencies": {
+        "jscs": "^3.0.7",
+        "jshint": "^2.9.4",
+        "purescript-psa": "^0.3.8",
+        "rimraf": "^2.5.0"
+    }
 }
